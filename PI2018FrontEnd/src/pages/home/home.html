@@ -1,0 +1,87 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+
+</ion-header>
+
+
+<ion-content padding>
+    <div class="logoPi">
+        <img src="../../assets/imgs/LogoPI.png"/>
+    </div>
+  <div id="login">
+    <div class="login2">
+        <button ion-button clear class="btnLogin">Home</button>
+        <button ion-button clear class="btnCadastro" (click)="irCadastro()">Cadastrar</button>
+    </div>
+    
+    <div class="login">
+        <button ion-button class="btnEntrar" (click)="identify()">Identificar</button>
+    </div>
+    <div>
+            <table>
+                    <tr>
+                      <th>Grupo 4°</th>
+                      <th>Professor Orientador</th>
+                    </tr>
+                    <tr>
+                      <td>Rodrigo Ribeiro</td>
+                      <td>Eduardo Meneses</td>
+                    </tr>
+                    <tr>
+                      <td>Claudemir Cardoso</td>
+                    </tr>
+                    <tr>
+                        <td>Lucas Marques</td>
+                    </tr>
+                    <tr>
+                        <td>Danilo Lima</td>
+                    </tr>
+                    <tr>
+                        <td>Thais Fernandes</td>
+                    </tr>
+                    <tr>
+                        <td>Henrique Lima</td>
+                    </tr>
+                  </table>
+    </div>
+</div>
+<div id="cadastro">
+    <div class="cadastro2">
+        <button ion-button clear (click)="irLogin()">Home</button>
+        <button ion-button clear class="btnCadastro2">Cadastrar</button>
+    </div>
+    
+    <div class="cadastro">
+        <form>
+            <ion-item>
+                <ion-label>Nome</ion-label>
+                <ion-input [(ngModel)]="pessoa.nome" name="nome"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>RG</ion-label>
+                <ion-input [(ngModel)]="pessoa.rg" name="rg"></ion-input>
+            </ion-item>
+              <ion-item>
+                <ion-label>Cpf</ion-label>
+                <ion-input [(ngModel)]="pessoa.cpf" name="cpf"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label>E-mail</ion-label>
+                <ion-input [(ngModel)]="pessoa.email" name="email"></ion-input>
+              </ion-item>
+            <ion-item>
+                <ion-label>Telefone</ion-label>
+                <ion-input [(ngModel)]="pessoa.telefone" name="telefone"></ion-input>
+            </ion-item>
+            <button ion-button class="btnEntrar" (click)="avancar()">Avançar</button>
+        </form>
+    </div> 
+</div>
+
+</ion-content>

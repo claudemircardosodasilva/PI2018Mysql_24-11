@@ -1,0 +1,21 @@
+page-endereco {
+    .btnTirarFoto{
+        margin-top: 5%;
+        margin-left: 8%;
+        margin-right: 5%;
+        width: 90%;
+        background-color: #383C85;
+    }
+    .btnCep{
+        background-color: #383C85;
+        margin-left: 8%;
+        margin-right: 5%;
+        width: 90%;
+    }  
+    .btnCep:active{
+        background-color: #5d62c0;
+    }
+    .btnTirarFoto:active{
+        background-color: #5d62c0;
+    } 
+}

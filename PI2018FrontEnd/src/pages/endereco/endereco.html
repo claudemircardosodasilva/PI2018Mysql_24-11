@@ -1,0 +1,46 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title><img src="../../assets/imgs/LogoPI.png"/></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <form>
+          <ion-item>
+            <ion-label>Cep</ion-label>
+            <ion-input [(ngModel)]="pessoa.endereco.cep" name="cep"></ion-input>
+          </ion-item>
+          <button class="btnCep" ion-button (click)='buscaCep()'>Buscar Endereço</button>
+          <ion-item>
+            <ion-label>Rua</ion-label>
+            <ion-input [(ngModel)]="pessoa.endereco.rua" name="rua" readonly></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Número da Casa*</ion-label>
+            <ion-input [(ngModel)]="pessoa.endereco.numeroCasa" name="numeroCasa"></ion-input>
+        </ion-item>
+          <ion-item>
+            <ion-label>Bairro</ion-label>
+            <ion-input [(ngModel)]="pessoa.endereco.bairro" name="bairro" readonly></ion-input>
+          </ion-item>
+        <ion-item>
+            <ion-label>Cidade</ion-label>
+            <ion-input [(ngModel)]="pessoa.endereco.cidade" name="cidade" readonly></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Estado</ion-label>
+            <ion-input [(ngModel)]="pessoa.endereco.estado" name="estado" readonly></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>País</ion-label>
+            <ion-input [(ngModel)]="pessoa.endereco.pais" name="pais"></ion-input>
+        </ion-item>
+        <button ion-button class="btnTirarFoto" (click)='tirarFoto()'>Tirar Foto</button>
+    </form>
+    <ion-item>
+      <img src="{{foto}}"/>
+    </ion-item>  
+</ion-content>

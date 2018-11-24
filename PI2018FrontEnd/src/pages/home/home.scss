@@ -1,0 +1,47 @@
+page-home {
+    .login{
+        top: 450px;
+        width: 90%
+    } 
+    .btnEntrar{
+        margin-top: 6%;
+        margin-left: 22%;
+        margin-right: 17%;
+        width: 60%;
+        background-color: #383C85;
+    }
+    .btnEntrar:active{
+        background-color: #5d62c0;
+    }      
+    .login2{
+        top: 400px;
+        margin-left: 17%;
+        margin-right: 20%;
+        width: 68%;
+    } 
+ 
+
+    .btnLogin{
+       background-color:#383C85;
+       color: #fff;
+    }
+    .btnCadastro2{
+        background-color:#383C85;
+        color: #fff;
+     }
+    #cadastro{
+        display: none;
+        top: 450px;
+        width: 90%
+    }
+    .cadastro2{
+        top: 400px;
+        margin-left: 13%;
+        margin-right: 20%;
+        width: 75%;
+    }
+    .logoPi{
+        width: 75%;
+        margin-left: 14%;
+    }
+}
